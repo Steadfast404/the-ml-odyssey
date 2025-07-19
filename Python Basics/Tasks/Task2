@@ -1,0 +1,12 @@
+#task2: Compare 3 numbers to find the lowest and average
+frnd1 = float(input("Enter the CGPA of the 1st friend: "))
+frnd2 = float(input("Enter the CGPA of the 1st friend: "))
+frnd3 = float(input("Enter the CGPA of the 1st friend: "))
+if frnd1<frnd2 and frnd1<frnd3:
+    print("First friend has the lowest CGPA")
+elif frnd2<frnd1 and frnd2<frnd3:
+    print("Second friend has the lowest CGPA")
+else:
+    print("last friend has the lowest CGPA")
+average = str((frnd1+frnd2+frnd3)/3)
+print (f"Average CGPA = {average} " )
