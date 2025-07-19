@@ -1,0 +1,19 @@
+#Task -3: bitwise Not(~) and Bitwise XOR(^) operation
+a = 6 # a= 00000110 
+not_a = ~a #a' = 11111001 equivalent to -7(dec)
+print(a,not_a)
+b = 3 # b= 00000011
+not_b = ~b #b' = 11111100 equivalent to -4(dec)
+print(b,not_b)
+
+a_xor_b = a^b # a XOR b = 101 equivalent to 5
+print(a_xor_b)
+# here the compiler is taking 8 bits for the single digits by default. we can actually limit the bit lrngth by bitmasking. eg.,
+
+x = 6 # x = 110
+bit_size = 3 # as 6 = 110 in binary
+mask = 2**bit_size-1
+# 2^3 - 1 =7 (111) which is now the largest value that can be represented by 3 bits. so all the other bits except last 3 are 0.
+not_x = ~x & mask # not_x = 001 equivalent to 1
+#now  when the AND operation is executed all the other bits except the last 3 will be discarded or become zero and the not_x will have valid values in the lower 3 bits only
+print(x, not_x)
