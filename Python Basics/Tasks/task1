@@ -1,0 +1,23 @@
+#task1.1
+str1 = "ABRACADABRA"
+index1 = str(str1.find('R'))
+print("first R in index no:" + index1 )
+
+#task1.2
+str2 = "The quick brown fox jumps over the lazy dog"
+sub = "brown fox"
+length = len(sub)
+start = (str2.find(sub))
+end = start + length
+print(str2[start: end])
+
+#task1.3
+strA = "Bangla"
+strB = "Amar"
+strC = "Sonar"
+print(strB + " " + strC + " "+ strA)
+
+#task1.4
+singer_name = input("Enter the name of the singer: ")
+song_name = input("Enter the song name: ")
+print(f"My favourite singer is {singer_name} whose most popular song is {song_name}")
